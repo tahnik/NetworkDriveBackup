@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 /**
  * Created by tahnik on 22/09/2016.
  */
@@ -14,8 +16,10 @@ public class Main {
             System.err.println("Directory to copy is not a valid directory. Please check the path");
             System.exit(2);
         }else if(!targetDirectory.verify()) {
-            System.err.println("Target directory is not a valid directory. Please check the path");
-            System.exit(2);
+            if(args[3] == null) {
+                JOptionPane.showInputDialog("Target directory does not exist or not valid. Do you want me to create it?");
+            }
+
         }else {
             System.out.println("All directories valid. Proceeding to copy");
         }
