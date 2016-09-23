@@ -3,6 +3,6 @@
  */
 public class Utilities {
     public static boolean verifyArgs(String args[]) {
-        return args.length < 2 ? false : true;
+        return args.length < 3 ? false : true;
     }
 }
