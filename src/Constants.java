@@ -3,6 +3,8 @@
  */
 public class Constants {
     public enum errorCodes {
-
+        NOT_ENOUGH_ARGUMENTS(1),
+        INVALID_DIRECTORY_TO_COPY,
+        APP_TYPE_NOT_VALID
     }
 }

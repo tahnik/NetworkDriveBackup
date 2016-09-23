@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         if(!Utilities.verifyArgs(args)) {
             System.err.println("Not enough arguments. Please provide the path of the directory and target directory");
-            System.exit(ErrorCodes.NOT_ENOUGH_ARGUMENTS);
+            System.exit(Constants.errorCodes.NOT_ENOUGH_ARGUMENTS);
         }
         FolderVerifier directoryToCopy = new FolderVerifier(args[0]);
         FolderVerifier targetDirectory = new FolderVerifier(args[1]);
